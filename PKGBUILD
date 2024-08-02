@@ -64,14 +64,14 @@ build() {
   cmake --build build5 -j12
 }
 
-package_plasma-integration() {
+package_lingmo-integration() {
   depends+=(noto-fonts
             ttf-hack
             xdg-desktop-portal-kde)
   DESTDIR="$pkgdir" cmake --install build
 }
 
-package_plasma5-integration() {
+package_lingmo5-integration() {
   pkgdesc='Qt5 Platform Theme integration plugins for the Plasma workspaces'
   depends=(gcc-libs
            glibc
